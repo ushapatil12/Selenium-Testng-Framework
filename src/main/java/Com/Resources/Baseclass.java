@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
 public class Baseclass {
-	public WebDriver driver;
+	public  WebDriver driver;
 	Properties prop;
 
 	public void initializedriver() throws IOException {

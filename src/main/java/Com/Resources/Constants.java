@@ -13,5 +13,6 @@ public class Constants {
 	public static String passwordErrormsg="Password must be between 4 and 20 characters!";
 	public static String Afterloginurl="https://naveenautomationlabs.com/opencart/index.php?route=account/account";
 	public static String Beforloginurl="https://naveenautomationlabs.com/opencart/index.php?route=account/login";
-
+    public static String emailid="test12";
+    public static String password="test";
 }

@@ -9,7 +9,7 @@ import pageobjectModel.Homepageobject;
 import pageobjectModel.Loginpageobject;
 
 public class LoginTestcases extends Baseclass {
-	@Test(priority = 2)
+	@Test(priority=2)
 	public void loginwithvaliddata() throws InterruptedException {
 		Homepageobject hop = new Homepageobject(driver);
 		hop.clickmyacc().click();
@@ -29,8 +29,8 @@ public class LoginTestcases extends Baseclass {
 		hop.clickmyacc().click();
 		hop.clicklogin().click();
 		Loginpageobject lop = new Loginpageobject(driver);
-		lop.enteremailid().sendKeys("test123");
-		lop.enterpassword().sendKeys("test");
+		lop.enteremailid().sendKeys(Constants.emailid);
+		lop.enterpassword().sendKeys(Constants.password);
 		lop.clcklogin().click();
 		CommonMethods.handleAssertion(driver.getCurrentUrl(), Constants.Beforloginurl);
 	}
