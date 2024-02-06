@@ -3,12 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumtestngproject.LoginTestcases">
+      <class name="seleniumtestngproject.RegistrationTestcases">
         <methods>
           <include name="launchbrowser"/>
-          <include name="loginwithvaliddata"/>
+          <include name="quitbrowser"/>
+          <include name="endReport"/>
+          <include name="ExtentReport"/>
+          <include name="launchBrowser"/>
+          <include name="verifyregistration"/>
         </methods>
-      </class> <!-- seleniumtestngproject.LoginTestcases -->
+      </class> <!-- seleniumtestngproject.RegistrationTestcases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

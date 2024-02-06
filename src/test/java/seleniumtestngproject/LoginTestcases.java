@@ -20,7 +20,7 @@ public class LoginTestcases extends Baseclass {
 		// lop.enterpassword().clear();
 		lop.enterpassword().sendKeys(RegistrationTestcases.passwordrandomgenerate);
 		lop.clcklogin().click();
-		CommonMethods.handleAssertion(driver.getCurrentUrl(), Constants.Afterloginurl);
+		CommonMethods.handleAssertion(driver.getCurrentUrl(), Constants.Beforeloginurl);
 	}
     @Test(priority = 1)
 	public void loginwithinvaliddata() throws InterruptedException {
@@ -32,7 +32,7 @@ public class LoginTestcases extends Baseclass {
 		lop.enteremailid().sendKeys(Constants.emailid);
 		lop.enterpassword().sendKeys(Constants.password);
 		lop.clcklogin().click();
-		CommonMethods.handleAssertion(driver.getCurrentUrl(), Constants.Beforloginurl);
+		CommonMethods.handleAssertion(driver.getCurrentUrl(), Constants.Afterloginurl);
 	}
 
 }

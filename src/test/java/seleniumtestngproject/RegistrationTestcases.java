@@ -44,7 +44,7 @@ public class RegistrationTestcases extends Baseclass {
 		randomemailgenerate = generaterandomemail();
 		passwordrandomgenerate = generatepassword();
 		Registrationpageobject rpo = new Registrationpageobject(driver);
-		CommonMethods.putExplicitwaits(driver, 20, rpo.enterfirstname());
+		CommonMethods.putExplicitwaits(driver, 50, rpo.enterfirstname());
 		rpo.enterfirstname().sendKeys(Constants.firstname);
 		rpo.enterlastname().sendKeys(Constants.lastname);
 		rpo.enteremail().sendKeys(randomemailgenerate);

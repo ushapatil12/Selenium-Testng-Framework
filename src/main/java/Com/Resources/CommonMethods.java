@@ -9,9 +9,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
 public class CommonMethods {
-	public static void handleAssertion(String actualurl,String expectedurl) {
+	public static void handleAssertion(String respCode,String responseCode) {
 		SoftAssert as=new SoftAssert();
-		as.assertEquals(actualurl, expectedurl);
+		as.assertEquals(respCode, responseCode);
 		as.assertAll();
 
 	}
@@ -20,6 +20,12 @@ public class CommonMethods {
 		  wait.until(ExpectedConditions.elementToBeClickable(element));
 		   
 	}
+	public static void handleAssertions(int respCode,int responseCode) {
+		SoftAssert as=new SoftAssert();
+		as.assertEquals(respCode, responseCode);
+		as.assertAll();
+	}
+	
 	
 
 }
