@@ -10,6 +10,7 @@
       <class name="seleniumtestngproject.LoginTestcases"/>
       <class name="seleniumtestngproject.CurrencybuttonTestcase"/>
       <class name="seleniumtestngproject.HomepageLinkTestcase"/>
+
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
