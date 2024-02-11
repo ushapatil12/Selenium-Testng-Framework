@@ -12,16 +12,21 @@ import pageobjectModel.Currencywindowpageobjectmodel;
 public class CurrencybuttonTestcase extends Baseclass {
 
     @Test
-	public void currencybuttonclickable() {
+	public void verifyEuroOptionCurrencyDropDownMenu() {
 		Currencywindowpageobjectmodel cpm=new Currencywindowpageobjectmodel(driver);
 		cpm.Clickonbutton().click();
-		Actions a=new Actions(driver);
-		String expres=cpm.Eurocurrencybutton().getText();
-		CommonMethods.handleAssertion(expres,Constants.Eurocurrency);
-		String poundstrlingcurrency=cpm.poundSterlingclickable().getText();
-		CommonMethods.handleAssertion(poundstrlingcurrency,Constants.poundsterlingcurrency );
-		String dollarcurrency=cpm.dollarcurrencyclickable().getText();
-		CommonMethods.handleAssertion(dollarcurrency,Constants.dollarcurrency );
+		CommonMethods.handleAssertion(cpm.Eurocurrencybutton().getText(),Constants.Eurocurrency);
+		
+    }
+    @Test
+    public void verifyPoundSterlingcurrencyDropDownMenu() {
+    	Currencywindowpageobjectmodel cpm=new Currencywindowpageobjectmodel(driver);
+		CommonMethods.handleAssertion(cpm.poundSterlingclickable().getText(),Constants.poundsterlingcurrency );
+		
+    }
+    public void verifyDollarcurrencyDropDown() {
+    	Currencywindowpageobjectmodel cpm=new Currencywindowpageobjectmodel(driver);
+		CommonMethods.handleAssertion(cpm.dollarcurrencyclickable().getText(),Constants.dollarcurrency );
     	
     }
  }

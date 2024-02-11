@@ -6,42 +6,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="seleniumtestngproject.LoginTestcases">
-        <methods>
-          <include name="launchbrowser"/>
-          <include name="quitbrowser"/>
-          <include name="endReport"/>
-          <include name="loginwithinvaliddata"/>
-          <include name="ExtentReport"/>
-          <include name="loginwithvaliddata"/>
-        </methods>
-      </class> <!-- seleniumtestngproject.LoginTestcases -->
-      <class name="seleniumtestngproject.HomepageLinkTestcase">
-        <methods>
-          <include name="launchbrowser"/>
-          <include name="quitbrowser"/>
-          <include name="endReport"/>
-          <include name="ExtentReport"/>
-          <include name="VerifyAllLinksonHomepage"/>
-        </methods>
-      </class> <!-- seleniumtestngproject.HomepageLinkTestcase -->
-      <class name="seleniumtestngproject.RegistrationTestcases">
-        <methods>
-          <include name="launchbrowser"/>
-          <include name="quitbrowser"/>
-          <include name="endReport"/>
-          <include name="ExtentReport"/>
-          <include name="verifyregistration"/>
-          <include name="verifyregistrationwithblankdata"/>
-        </methods>
-      </class> <!-- seleniumtestngproject.RegistrationTestcases -->
       <class name="seleniumtestngproject.CurrencybuttonTestcase">
         <methods>
           <include name="launchbrowser"/>
           <include name="quitbrowser"/>
           <include name="endReport"/>
-          <include name="currencybuttonclickable"/>
           <include name="ExtentReport"/>
+          <include name="verifyEuroOptionCurrencyDropDownMenu"/>
+          <include name="verifyPoundSterlingcurrencyDropDownMenu"/>
         </methods>
       </class> <!-- seleniumtestngproject.CurrencybuttonTestcase -->
     </classes>
